@@ -1,0 +1,148 @@
+.feed{
+    width: 100%;
+    /* border: 2px solid rgb(255, 249, 249); */
+    display: flex;
+}
+.left{
+    width: 230px;
+    border-right: 1px solid rgba(255, 255, 255, 0.362);
+    /* border: 2px solid white; */
+}
+.right{
+    width: 83%;
+    /* border: 2px solid white; */
+    margin-left: 8px;
+    position: relative;
+    height: 94vh;
+}
+.right h4{
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+/* ? Side Bar css */
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.category-btn{
+    background-color: black;
+    color: white;
+    padding: 6px 8px;
+    margin: 3px 0px;
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+    transition:0.3s;
+}
+.category-btn #name{
+    font-size: 19px;
+    padding: 0 25px;
+}
+.category-btn #icon{
+    font-size: 20px;
+    color: rgb(225, 0, 0);
+}
+.category-btn:hover{
+    background-color: rgb(248, 29, 29);
+    border-radius: 25px;
+}
+.category-btn:hover #icon{
+    color: white;
+}
+/* ? Video section css */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1{
+    width: 280px;
+    height: 300px;
+    margin: 5px 8px;
+    background-color: none;
+    /* border: 1px solid white; */
+    border-radius: 6px;
+    background-color: rgb(61, 58, 58);
+}
+.video-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+/* ? Video section video card css */
+.video-link{
+    color:  white;
+    text-decoration: none;
+}
+.video-link p{
+    padding: 3px 6px;
+}
+#channel-title{
+    color: rgb(164, 161, 161);
+    display: flex;
+    align-items: center;
+}
+.tick{
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: rgb(118, 117, 117);
+    color: black;
+    margin-left: 4px;
+    height: 15px;
+}
+/* ? Channel Card Css */
+.card-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+.card-link h4{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card-link{
+    color:  white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 0px;
+}
+@media screen and (max-width:726px) {
+    .feed{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 75px;
+        border-right: 0;
+        z-index: 11;
+        margin-top: -14px;
+
+    }
+    .side-bar{
+        flex-direction: row;
+        overflow-x: auto;
+        width: 590px;
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media screen and (max-width:666px) {
+    .box1{
+        height: 400px;
+        width: 100%;
+    }
+    .video-img{
+        height: 300px;
+    }
+}
+@media screen and (max-width:380px) {
+    .left{
+        margin-top: -5px;
+    }
+}
